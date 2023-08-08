@@ -1,0 +1,17 @@
+Creare un'applicazione React che permetta di cercare e visualizzare informazioni su film. 
+L'applicazione dovrebbe utilizzare l'API di The Movie Database (https://www.themoviedb.org/documentation/api) per ottenere le informazioni sui film.
+
+L'interfaccia utente dovrebbe includere un campo di input di ricerca e un pulsante di ricerca.
+ Dopo aver inserito una query di ricerca e premuto il pulsante di ricerca, l'applicazione dovrebbe 
+ visualizzare una lista di film corrispondenti alla query di ricerca. Ogni risultato della ricerca
+  dovrebbe includere il titolo del film, la trama e la copertina.
+
+Inoltre, l'applicazione dovrebbe consentire all'utente di selezionare un film dalla lista dei risultati 
+della ricerca e visualizzare ulteriori dettagli su di esso, come ad esempio il cast, il rating, il trailer, etc.
+
+Il layout dell'applicazione dovrebbe essere responsivo e adattarsi a diverse dimensioni di schermo. 
+L'applicazione dovrebbe anche gestire eventuali errori di rete o risposte non valide dall'API e fornire un feedback adeguato all'utente.
+
+L'obiettivo di questo esercizio è testare la capacità dello sviluppatore di creare un'interfaccia utente interattiva che integri un'API esterna e 
+fornisca una buona esperienza utente. Inoltre, l'esercizio mette alla prova la capacità dello sviluppatore di gestire gli errori di rete e fornire 
+un feedback utile all'utente.

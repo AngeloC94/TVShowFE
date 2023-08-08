@@ -1,0 +1,107 @@
+.active {
+  color: var(--color-text-leftbar-hover);
+}
+.activeIcon {
+  color: rgb(255, 175, 70);
+}
+
+.left-sidebar {
+  display: flex;
+  background-color: var(--color-background-leftbar);
+  backdrop-filter: blur(5px);
+  // box-shadow: #131313 0px 5px 15px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  width: 50px;
+  padding: 20px;
+  z-index: 150;
+  transition: all 0.3s linear;
+
+  .sideBarMenu {
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    .logo {
+      text-align: center;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .searchSideBar {
+      border: none;
+      border-radius: 25px;
+      padding-top: 20px;
+      transition: all 2s linear;
+      display: none;
+      padding: 2% 4%;
+      background: rgba(0, 174, 255, 0);
+      // color: #fff;
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      &::selection {
+        border: none;
+      }
+      &::placeholder {
+        color: #fff;
+      }
+    }
+    .sideBarIconTextClosed {
+      display: none;
+    }
+
+    .sideBarIconTextOpened {
+      display: block;
+    }
+  }
+
+  .sidebarLink {
+    color: var(--color-text-leftbar);
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+   
+    span {
+      text-decoration: none;
+      font-size: 15px;
+      margin-left: 10px;
+      transition: all 0.3s linear;
+
+    }
+
+    &:is(:hover) {
+      span {
+        transition: all 0.3s linear;
+        color: var(--color-text-leftbar-hover)
+      }
+
+      .userIcon {
+        transition: all 0.3s linear;
+        color: rgb(255, 175, 70);
+      }
+    }
+  }
+}
+.openSideBar {
+  display: flex;
+  position: fixed;
+  top: 50%;
+  right: 5%;
+  height: 100%;
+
+  transition: all 0.3s linear;
+  cursor: pointer;
+  &:hover {
+    transition: all 0.3s linear;
+
+    color: rgba(255, 255, 255, 0.3);
+    transform: translateX(5px);
+  }
+}

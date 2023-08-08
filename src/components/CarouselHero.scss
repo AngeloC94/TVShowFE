@@ -1,0 +1,63 @@
+.carouselHero-container {
+    position: relative;
+    z-index: 10;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+  
+    .carouselHero-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      animation: opacity 1s ease-in-out;
+      max-width: 1920px;
+      border-radius: 10px;
+    //   box-shadow: #131313 1px 1px 15px;
+  
+      .carouselHero-arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background: transparent;
+        font-size: 3rem;
+        color: #ccc;
+        cursor: pointer;
+  
+        &:hover {
+          color: #555;
+        }
+  
+        &.prev {
+          margin-right: auto;
+        }
+  
+        &.next {
+          margin-left: auto;
+        }
+      }
+  
+      .carouselHero-items-wrapper {
+        overflow: hidden;
+        width: 100%;
+      }
+  
+      .carouselHero-items {
+        display: flex;
+        transition: transform 1.5s ease, opacity 0.5s ease-in-out;
+        opacity: 1;
+        }
+    }
+  }
+
+  .opacity{
+    animation: opacity 1s linear;
+  }
+
+  @keyframes opacity {
+    0% { opacity: 0; }
+ 
+    100% { opacity: 1; }
+  }
